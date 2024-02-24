@@ -190,7 +190,7 @@ After that you will get an output saying **App running at [http://localhost:[you
 
 if you go to that url, you will have your website which may or may not look similar to the output.
 
-### output image
+### Output images
 
 output - 1
 ![Home page](./images/output%20-%201.webp)
