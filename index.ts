@@ -39,6 +39,6 @@ const app = Bun.serve({
         }
     }
   },
-  port: 5000,
+  port: process.env.PORT || 5000,
 });
 console.log(`App running at http://localhost:${app.port}`);
