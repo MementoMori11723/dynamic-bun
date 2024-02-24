@@ -2,11 +2,11 @@
 
 It's a website built with bun http server api's.
 
-in this website we have a home page, about page and an error page.
+In this website we have a home page, about page and an error page.
 
 ## Build Guide
 
-Here i will walk you through the steps to build a basic website.
+Here I will walk you through the steps to build a basic website.
 
 ### Steps : -
 
@@ -172,8 +172,31 @@ If you observe closely you will see that we haven't used **.html** file or files
 
 That is because we wrote our html as a http response body and added necessary headers.
 
-Bun.js by default has a server api which we can use to build a http server, inside that server we have a fetch function with a parameter request which we will use to fetch the url path name.
+Bun.js by default has a server api which we can use to build a http server, inside that server we have a fetch function with a parameter request which we will use it to fetch the url path name.
 
 based on the path name we will return a response, by default we will return html content if the path has a file in pages directory else we will redirect them to our error page.
 
 if it is one of the cases then it needs to return the js file, since the html content is dynamic.
+
+## Output
+
+To run the project just type this in terminal or command prompt
+
+```bash
+bun run dev
+```
+
+After that you will get an output saying **App running at <http://localhost:[your_port_number]>**
+
+if you go to that url, you will have your website which may or may not look similar to the output.
+
+### output image
+
+output - 1
+![Home page](./images/output%20-%201.webp)
+
+output - 2
+![About page](./images/output%20-%202.webp)
+
+output - 3
+![Error page](./images/output%20-%203.webp)
