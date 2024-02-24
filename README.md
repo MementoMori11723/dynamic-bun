@@ -6,7 +6,7 @@ In this website we have a home page, about page and an error page.
 
 ## Build Guide
 
-Here I will walk you through the steps to build a basic website.
+Here I will walk you through the steps to build a basic website with bun.js.
 
 ### Steps : -
 
@@ -186,7 +186,7 @@ To run the project just type this in terminal or command prompt
 bun run dev
 ```
 
-After that you will get an output saying **App running at <http://localhost:[your_port_number]>**
+After that you will get an output saying **App running at [http://localhost:[your_port_number]](http://localhost:%5Byour_port_number%5D)**
 
 if you go to that url, you will have your website which may or may not look similar to the output.
 
