@@ -20,19 +20,17 @@ const app = Bun.serve({
         }`;
         const checkFile = Bun.file(base_path + file);
         if (await checkFile.exists()) {
-          const body: string = /*html*/ `
-            <!DOCTYPE html>
-            <html>
+          const body: string = /*html*/ `<!DOCTYPE html>
+          <html lang="en">
             <head>
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-                <title>Demo</title>
-                <script defer src="${file}"></script>
+              <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+              <title>Demo</title>
+              <script defer src="${file}"></script>
             </head>
             <body>
-                <page-content></page-content>
+              <page-content></page-content>
             </body>
-            </html>
-          `;
+          </html>`;
           return new Response(body, headers);
         } else {
           return Response.redirect("/error", 301);
