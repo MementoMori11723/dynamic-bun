@@ -29,7 +29,7 @@ const app = Bun.serve({
                 <script defer src="${file}"></script>
             </head>
             <body>
-                <new-ele></new-ele>
+                <page-content></page-content>
             </body>
             </html>
           `;

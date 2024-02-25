@@ -1,19 +1,23 @@
-class test extends HTMLElement {
-  constructor() {
-    super();
-    const root = this.attachShadow({ mode: "open" });
-    root.innerHTML = /*html*/ `
+customElements.define(
+  "test-drive",
+  class extends HTMLElement {
+    constructor() {
+      super();
+      const root = this.attachShadow({ mode: "open" });
+      root.innerHTML = /*html*/ `
       <h1>test drive complete!</h1>
     `;
+    }
   }
-}
-customElements.define("test-drive", test);
+);
 
-class new_ele extends HTMLElement {
-  constructor() {
-    super();
-    const root = this.attachShadow({ mode: "open" });
-    root.innerHTML = /*html*/ `
+customElements.define(
+  "page-content",
+  class extends HTMLElement {
+    constructor() {
+      super();
+      const root = this.attachShadow({ mode: "open" });
+      root.innerHTML = /*html*/ `
       <h1>This works!</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -23,6 +27,6 @@ class new_ele extends HTMLElement {
       </p>
       <test-drive></test-drive>
     `;
+    }
   }
-}
-customElements.define("new-ele", new_ele);
+);
