@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "Build": "bun build index.ts --compile --minify --target=browser --outfile=server",
     "dev": "bun run --watch index.ts"
   },
   "devDependencies": {
