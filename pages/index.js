@@ -19,12 +19,7 @@ customElements.define(
       const root = this.attachShadow({ mode: "open" });
       root.innerHTML = /*html*/ `
       <h1>This works!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Sit porro sequi vitae eaque maiores doloribus, 
-        ab fugiat alias ex ipsam facilis deserunt velit nam obcaecati, 
-        repudiandae dolor voluptatibus? Sit, nesciunt.
-      </p>
+      <a href="/about">About page</a>
       <test-drive></test-drive>
     `;
     }
